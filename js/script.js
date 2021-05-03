@@ -4,6 +4,7 @@ const filterContainer=document.querySelector(".portfolio-filter"),
       totalFilterBtn=filterBtns.length,
       portfolioItems=document.querySelectorAll(".portfolio-item"),
       totalPortfolioItem=portfolioItems.length;
+      
 
       for(let i=0; i<totalFilterBtn; i++){
         filterBtns[i].addEventListener("click", function(){
@@ -21,14 +22,11 @@ const filterContainer=document.querySelector(".portfolio-filter"),
            portfolioItems[k].classList.add("hide");
           }
           if(filterValue === "all"){
-           portfolioItems[k].classList.remove("hide");
-           portfolioItems[k].classList.add("show");
+            portfolioItems[k].classList.remove("hide");
+            portfolioItems[k].classList.add("show");
+           }
           }
-
-         }
-
         })
-
       }
 
 
